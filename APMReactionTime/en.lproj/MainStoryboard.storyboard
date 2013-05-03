@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iTf-hw-1if">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Graph Controller - Item 2-->
+        <scene sceneID="gYF-GL-95l">
+            <objects>
+                <viewController id="U31-1P-Kiq" customClass="APMGraphController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fL2-xW-gkY">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="TYE-Pr-cxo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zR-dg-W1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="755"/>
+        </scene>
+        <!--View Controller - Play-->
+        <scene sceneID="tuv-z0-XO2">
+            <objects>
+                <viewController id="k1y-Ks-hO2" customClass="APMViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X01-ht-AVP">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="default_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="3xb-at-P2G">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="rgj-3c-bc9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxL-gf-zTd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="CpT-4S-IFm"/>
+                                    <constraint firstAttribute="height" constant="73" id="WXE-J4-t4u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="0" image="upbutton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressButton:" destination="k1y-Ks-hO2" eventType="touchUpInside" id="yeE-dN-2rV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbE-Ge-cA3">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="1" image="downbutton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressButton:" destination="k1y-Ks-hO2" eventType="touchUpInside" id="j8H-vk-Xhx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIF-He-Jed">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="qVA-bc-971"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="3" image="rightbutton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressButton:" destination="k1y-Ks-hO2" eventType="touchUpInside" id="F3v-nW-uqF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-Ap-Loa">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="eGH-86-qpM"/>
+                                    <constraint firstAttribute="width" constant="73" id="uOh-n2-qP6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="2" image="leftbutton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressButton:" destination="k1y-Ks-hO2" eventType="touchUpInside" id="NgU-B0-ANQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WbE-Ge-cA3" firstAttribute="top" secondItem="hIF-He-Jed" secondAttribute="top" type="default" id="0pO-xM-cKS"/>
+                            <constraint firstItem="qxL-gf-zTd" firstAttribute="leading" secondItem="WbE-Ge-cA3" secondAttribute="leading" type="default" id="5jd-hN-7pz"/>
+                            <constraint firstAttribute="bottom" secondItem="oZb-Ap-Loa" secondAttribute="bottom" constant="33" id="Ad8-eG-KFB"/>
+                            <constraint firstItem="oZb-Ap-Loa" firstAttribute="leading" secondItem="X01-ht-AVP" secondAttribute="leading" constant="51" id="ECl-yD-lV5"/>
+                            <constraint firstAttribute="trailing" secondItem="3xb-at-P2G" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HMF-x0-TUd"/>
+                            <constraint firstItem="WbE-Ge-cA3" firstAttribute="bottom" secondItem="hIF-He-Jed" secondAttribute="bottom" type="default" id="Mmv-i0-CIj"/>
+                            <constraint firstAttribute="trailing" secondItem="hIF-He-Jed" secondAttribute="trailing" constant="50" id="R7e-4N-1jL"/>
+                            <constraint firstItem="oZb-Ap-Loa" firstAttribute="top" secondItem="WbE-Ge-cA3" secondAttribute="top" type="default" id="Tti-1K-WHM"/>
+                            <constraint firstItem="3xb-at-P2G" firstAttribute="leading" secondItem="X01-ht-AVP" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="VcR-AQ-PQU"/>
+                            <constraint firstItem="WbE-Ge-cA3" firstAttribute="trailing" secondItem="qxL-gf-zTd" secondAttribute="trailing" type="default" id="Vya-73-gh3"/>
+                            <constraint firstAttribute="bottom" secondItem="qxL-gf-zTd" secondAttribute="bottom" constant="106" id="WIq-be-DFR"/>
+                            <constraint firstItem="qxL-gf-zTd" firstAttribute="centerX" secondItem="3xb-at-P2G" secondAttribute="centerX" type="default" id="WoA-fp-yL3"/>
+                            <constraint firstItem="WbE-Ge-cA3" firstAttribute="bottom" secondItem="oZb-Ap-Loa" secondAttribute="bottom" type="default" id="WsE-3w-U0w"/>
+                            <constraint firstItem="3xb-at-P2G" firstAttribute="top" secondItem="X01-ht-AVP" secondAttribute="top" constant="20" symbolic="YES" type="default" id="qcy-Ch-nNU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Play" id="gkG-Fk-8Bf"/>
+                    <connections>
+                        <outlet property="displayScreen" destination="3xb-at-P2G" id="LBj-us-p7D"/>
+                        <outlet property="downButton" destination="WbE-Ge-cA3" id="udf-eW-W52"/>
+                        <outlet property="leftButton" destination="oZb-Ap-Loa" id="iet-KQ-kD4"/>
+                        <outlet property="rightButton" destination="hIF-He-Jed" id="7OP-TN-T4j"/>
+                        <outlet property="upButton" destination="qxL-gf-zTd" id="dov-PQ-SUS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YbW-2k-Zdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="191"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7uq-3h-R3n">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="iTf-hw-1if" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="f3Z-js-f8m">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="k1y-Ks-hO2" kind="relationship" relationship="viewControllers" id="aa1-X0-xkW"/>
+                        <segue destination="U31-1P-Kiq" kind="relationship" relationship="viewControllers" id="0pd-4b-ki8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4UA-NV-M72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="424"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default_bg.png" width="607" height="396"/>
+        <image name="downbutton.png" width="190" height="185"/>
+        <image name="leftbutton.png" width="185" height="190"/>
+        <image name="rightbutton.png" width="185" height="190"/>
+        <image name="upbutton.png" width="190" height="185"/>
+    </resources>
+    <classes>
+        <class className="APMGraphController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/APMGraphController.h"/>
+        </class>
+        <class className="APMViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/APMViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pressButton:"/>
+                <relationship kind="outlet" name="displayScreen" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="downButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="leftButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="rightButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="upButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
